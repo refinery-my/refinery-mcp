@@ -4,11 +4,11 @@ MCP server for managing ChatGPT quotes, columns, and conversations.
 
 ## Setup
 
-1. Generate an API key (in Supabase SQL editor):
-```sql
-INSERT INTO user_api_keys (user_id, key, name)
-VALUES ('your-user-id', 'my-secret-key-here', 'Claude MCP');
-```
+1. Generate an API key in the web app:
+   - Open the Quotes web app
+   - Click "API" in the header
+   - Click "Generate" to create a new key
+   - Copy the key (you won't see it again!)
 
 2. Add to your Claude config (`~/.claude.json` or Claude Code settings):
 
