@@ -8,10 +8,10 @@ import { createClient } from '@supabase/supabase-js';
 
 const SUPABASE_URL = process.env.SUPABASE_URL || 'https://upwymawtegcaslfeulrq.supabase.co';
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVwd3ltYXd0ZWdjYXNsZmV1bHJxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk5NDgyOTUsImV4cCI6MjA4NTUyNDI5NX0.C62IRPXX9tDEACbGiDdVWh1cZf_u6KvAJLrElf7PynA';
-const API_KEY = process.env.QUOTES_API_KEY;
+const API_KEY = process.env.REFINERY_API_KEY;
 
 if (!API_KEY) {
-  console.error('QUOTES_API_KEY environment variable is required');
+  console.error('REFINERY_API_KEY environment variable is required');
   console.error('Generate one in the web app or via SQL:');
   console.error("  INSERT INTO user_api_keys (user_id, key, name) VALUES ('your-user-id', 'your-secret-key', 'MCP');");
   process.exit(1);

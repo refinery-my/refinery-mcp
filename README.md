@@ -19,7 +19,7 @@ MCP server for managing ChatGPT quotes, columns, and conversations.
       "command": "node",
       "args": ["/Users/inem/Code/Experiments/chatgpt-extension/mcp/src/index.js"],
       "env": {
-        "QUOTES_API_KEY": "my-secret-key-here"
+        "REFINERY_API_KEY": "my-secret-key-here"
       }
     }
   }
