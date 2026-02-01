@@ -1,4 +1,4 @@
-# ChatGPT Quotes MCP Server
+# Refinery MCP Server
 
 MCP server for managing ChatGPT quotes, columns, and conversations.
 
@@ -15,7 +15,7 @@ MCP server for managing ChatGPT quotes, columns, and conversations.
 ```json
 {
   "mcpServers": {
-    "chatgpt-quotes": {
+    "refinery": {
       "command": "node",
       "args": ["/Users/inem/Code/Experiments/chatgpt-extension/mcp/src/index.js"],
       "env": {

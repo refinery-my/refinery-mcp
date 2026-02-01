@@ -46,7 +46,7 @@ async function validateApiKey() {
 }
 
 const server = new Server(
-  { name: 'chatgpt-quotes', version: '1.0.0' },
+  { name: 'refinery', version: '1.0.0' },
   { capabilities: { tools: {} } }
 );
 
