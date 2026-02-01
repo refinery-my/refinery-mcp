@@ -16,7 +16,11 @@ npm install -g refinery-mcp
    - Click "Generate" to create a new key
    - Copy the key (you won't see it again!)
 
-2. Add to your Claude config (`~/.claude.json` or Claude Code settings):
+2. Get your Supabase service key:
+   - Supabase Dashboard → Settings → API
+   - Copy the `service_role` key (keep it secret!)
+
+3. Add to your Claude config (`~/.claude.json` or Claude Code settings):
 
 ```json
 {
@@ -24,7 +28,8 @@ npm install -g refinery-mcp
     "refinery": {
       "command": "refinery-mcp",
       "env": {
-        "REFINERY_API_KEY": "your-key-here"
+        "REFINERY_API_KEY": "your-key-here",
+        "SUPABASE_SERVICE_KEY": "your-service-role-key"
       }
     }
   }
