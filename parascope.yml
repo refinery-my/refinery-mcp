@@ -1,0 +1,4 @@
+refinery-mcp:
+  install: npm install -g refinery-mcp
+  npm: https://www.npmjs.com/package/refinery-mcp
+  repository: https://github.com/refinery-my/refinery-mcp
