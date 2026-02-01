@@ -18,7 +18,13 @@ if (!API_KEY) {
   process.exit(1);
 }
 
-const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  global: {
+    headers: {
+      'x-api-key': API_KEY,
+    },
+  },
+});
 
 // Validate API key and get user_id
 let currentUserId = null;
