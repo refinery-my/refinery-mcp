@@ -2,10 +2,16 @@
 
 MCP server for managing ChatGPT quotes, columns, and conversations.
 
+## Installation
+
+```bash
+npm install -g refinery-mcp
+```
+
 ## Setup
 
 1. Generate an API key in the web app:
-   - Open the Quotes web app
+   - Open [refinery.my](https://refinery.my)
    - Click "API" in the header
    - Click "Generate" to create a new key
    - Copy the key (you won't see it again!)
@@ -16,10 +22,9 @@ MCP server for managing ChatGPT quotes, columns, and conversations.
 {
   "mcpServers": {
     "refinery": {
-      "command": "node",
-      "args": ["/Users/inem/Code/Experiments/chatgpt-extension/mcp/src/index.js"],
+      "command": "refinery-mcp",
       "env": {
-        "REFINERY_API_KEY": "my-secret-key-here"
+        "REFINERY_API_KEY": "your-key-here"
       }
     }
   }

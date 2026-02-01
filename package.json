@@ -1,12 +1,22 @@
 {
   "name": "refinery-mcp",
   "version": "1.0.0",
-  "description": "MCP server for managing ChatGPT quotes",
+  "description": "MCP server for Refinery - manage your saved ChatGPT quotes",
   "type": "module",
   "main": "src/index.js",
+  "bin": {
+    "refinery-mcp": "src/index.js"
+  },
   "scripts": {
     "start": "node src/index.js"
   },
+  "keywords": ["mcp", "refinery", "chatgpt", "quotes", "claude"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/refinery-my/refinery-mcp.git"
+  },
+  "homepage": "https://refinery.my",
+  "license": "MIT",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "@supabase/supabase-js": "^2.39.0"
